@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+header {
+    padding: 25px 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
