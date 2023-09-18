@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&family=Ubuntu:wght@500&display=swap');
+
+html {
+  background-color: #1c1c1c;
+}
+
+body {
+  padding: 0 5%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav div a {
+    font-family: Mulish;
+    font-size: 1.6rem;
+}
+
+nav ul a {
+    font-family: Ubuntu;
+    font-size: 1.1rem;
+}
+
+#sections-links {
+  display: flex;
+  gap: 20px;
+}
