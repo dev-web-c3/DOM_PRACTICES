@@ -3,11 +3,14 @@
 html {
   background-color: #1c1c1c;
 }
+* {
+  box-sizing: border-box;
+  
+}
 
 body {
   padding: 0 5%;
-  margin: 0;
-  box-sizing: border-box;
+  
 }
 
 li {
@@ -69,10 +72,10 @@ nav ul a {
 }
 
 #colors {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .section-title {
@@ -82,26 +85,26 @@ nav ul a {
 }
 
 #colors ul {
-    display: flex;
-    gap: 5rem;
-    padding: 0;
+  display: flex;
+  gap: 5rem;
+  padding: 0;
 }
 
 .color-item h3 {
-    color: #CDCDCD;
-    font-family: Ubuntu;
-    font-size: 1rem;
+  color: #cdcdcd;
+  font-family: Ubuntu;
+  font-size: 1rem;
 }
 
 .color-item-square {
-    width: 147px;
-    height: 147px;
-    background-color: #010101;
-    border: 1px solid #1C1C1C;
+  width: 147px;
+  height: 147px;
+  background-color: #010101;
+  border: 1px solid #1c1c1c;
 }
 
 .color-item-description {
-    font-family: Ubuntu;
-    font-size: .9rem;
-    color: #2B2B2B;
+  font-family: Ubuntu;
+  font-size: 0.9rem;
+  color: #2b2b2b;
 }
