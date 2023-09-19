@@ -20,27 +20,23 @@
 
 const colorItemList = document.querySelectorAll(".color-item");
 const modalContainer = document.querySelector("#modal-box");
-const article = document.querySelector("article");
-const articleDiv = document.querySelector("#article");
 const closeButton = document.querySelector("#cross-button");
-const articleContainer = document.createElement("div");
-articleContainer.id = "article";
 
-closeButton.addEventListener("click", (event) => {
-  const modalContainerDisplay = modalContainer.style.display;
-  if (modalContainerDisplay !== "none") {
-    modalContainer.style.display = "none";
-    articleContainer.innerHTML = "";
-  }
-});
+const articleContainer = document.createElement("div");
+articleContainer.innerHTML = "";
+modalContainer.style.display = "none";
+modalContainer.appendChild(articleContainer);
+
 colorItemList.forEach((colorItem) => {
   colorItem.addEventListener("click", (event) => {
-    const currentElement = event.currentTarget;
-    console.log( currentElement.innerHTML);
-    articleContainer.innerHTML = currentElement.innerHTML;
+    const currentElement = event.currentTarget.innerHTML;
+    articleContainer.innerHTML = currentElement;
     modalContainer.style.display = "flex";
-   
-
-    // article.appendChild(articleContainer);
   });
 });
+
+closeButton.addEventListener("click", () => {
+    modalContainer.style.display = "none";
+    articleContainer.innerHTML = "";
+});
+
